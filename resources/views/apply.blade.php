@@ -281,6 +281,8 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/our-services">Our Services</a></li>
+                <li><a href="/become-a-member">Member</a></li>
+                <li><a href="/apply-for-loan">Loans</a></li>
                 <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>

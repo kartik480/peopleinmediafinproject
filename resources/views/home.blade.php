@@ -586,6 +586,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/our-services">Our Services</a></li>
+                <li><a href="/become-a-member">Member</a></li>
+                <li><a href="/apply-for-loan">Loans</a></li>
                 <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>
@@ -601,8 +603,8 @@
                     and group members through structured microfinance lending programs.
                 </p>
                 <div class="cta-buttons">
-                    <a href="/apply-for-loan" class="btn btn-primary">Apply for Loan</a>
-                    <a href="/become-a-member" class="btn btn-secondary">Become a Member</a>
+                    <a href="/become-a-member" class="btn btn-primary">Become a Member</a>
+                    <a href="/apply-for-loan" class="btn btn-secondary">Apply for Loan</a>
                     <a href="/contact-us" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
