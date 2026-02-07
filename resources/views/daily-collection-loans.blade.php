@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Our Services - People in Microfinance - Comprehensive loan solutions for small traders and businesses">
+    <meta name="description" content="Daily Collection Loans - People in Microfinance - Loans for daily income earners and small vendors">
     
-    <title>Our Services - People in Microfinance</title>
+    <title>Daily Collection Loans - People in Microfinance</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -119,28 +119,6 @@
         .section-content {
             max-width: 900px;
             margin: 0 auto;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-teal) 0%, var(--accent-teal-light) 100%);
-            border-radius: 2px;
         }
         
         /* Service Content */
@@ -314,10 +292,6 @@
                 font-size: 2rem;
             }
             
-            .section-title {
-                font-size: 2rem;
-            }
-            
             .nav-links {
                 display: none;
             }
@@ -398,78 +372,12 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive financial solutions tailored to meet your business and personal needs</p>
+            <h1>Daily Collection Loans</h1>
+            <p>Loans for daily income earners and small vendors</p>
         </div>
     </section>
 
     <!-- Services Content -->
-    <section class="content-section">
-        <div class="container">
-            <div class="section-content">
-                <div class="service-content">
-                    <h3 class="service-title">
-                        <span class="service-icon">🏪</span>
-                        Small Trader Loans
-                    </h3>
-                    
-                    <p class="service-description">
-                        Financial assistance for small business owners and street-level traders to support working capital and daily business operations. Our Small Trader Loans are specifically designed to empower micro-enterprises with the financial resources they need to grow, sustain, and thrive in today's competitive market.
-                    </p>
-                    
-                    <div class="loan-purpose-section">
-                        <h4 class="loan-purpose-title">Loan Purpose Includes:</h4>
-                        <div class="purpose-grid">
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Shop inventory purchase</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Small business working capital</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Equipment purchase</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Business support expenses</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="features-section">
-                        <h4 class="features-title">Features:</h4>
-                        <div class="features-grid">
-                            <div class="feature-card">
-                                <span class="feature-icon">📄</span>
-                                <h5 class="feature-name">Easy Documentation</h5>
-                                <p class="feature-description">Minimal paperwork and streamlined application process for quick access to funds.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">⚡</span>
-                                <h5 class="feature-name">Quick Approval</h5>
-                                <p class="feature-description">Fast processing and approval times to get your business running without delays.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">🔄</span>
-                                <h5 class="feature-name">Flexible Repayment Options</h5>
-                                <p class="feature-description">Customized repayment plans that fit your business cash flow and financial capacity.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">💰</span>
-                                <h5 class="feature-name">Small Ticket Loan Structure</h5>
-                                <p class="feature-description">Affordable loan amounts designed specifically for small traders and micro-enterprises.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Daily Collection Loans Section -->
     <section class="content-section">
         <div class="container">
             <div class="section-content">
@@ -480,7 +388,7 @@
                     </h3>
                     
                     <p class="service-description">
-                        Loans specially designed for daily income earners and small vendors with convenient daily repayment options. Perfect for businesses that generate daily revenue and need flexible payment schedules that match their cash flow.
+                        Loans specially designed for daily income earners and small vendors with convenient daily repayment options.
                     </p>
                     
                     <div class="loan-purpose-section">
@@ -531,128 +439,6 @@
                                 <span class="feature-icon">💼</span>
                                 <h5 class="feature-name">Helps Maintain Daily Business Cash Flow</h5>
                                 <p class="feature-description">Ensures your business operations continue smoothly by providing timely financial support when needed.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Group Personal Loans Section -->
-    <section class="content-section">
-        <div class="container">
-            <div class="section-content">
-                <div class="service-content">
-                    <h3 class="service-title">
-                        <span class="service-icon">👥</span>
-                        Group Personal Loans
-                    </h3>
-                    
-                    <p class="service-description">
-                        Personal loans provided through group-based lending systems where members support and guarantee each other. This collaborative approach ensures mutual support and shared responsibility for loan repayment.
-                    </p>
-                    
-                    <div class="loan-purpose-section">
-                        <h4 class="loan-purpose-title">Loan Usage:</h4>
-                        <div class="purpose-grid">
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Education expenses</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Medical expenses</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Household needs</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Family expenses</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Personal financial support</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="features-section">
-                        <h4 class="features-title">Features:</h4>
-                        <div class="features-grid">
-                            <div class="feature-card">
-                                <span class="feature-icon">🤝</span>
-                                <h5 class="feature-name">Group Guarantee Model</h5>
-                                <p class="feature-description">Members support and guarantee each other, creating a collaborative lending environment with shared responsibility.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">💵</span>
-                                <h5 class="feature-name">Affordable Interest Structure</h5>
-                                <p class="feature-description">Competitive interest rates designed to make loans accessible and affordable for group members.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">🔓</span>
-                                <h5 class="feature-name">Easy Loan Accessibility</h5>
-                                <p class="feature-description">Streamlined application process with group support, making it easier to access financial assistance when needed.</p>
-                            </div>
-                            <div class="feature-card">
-                                <span class="feature-icon">📊</span>
-                                <h5 class="feature-name">Encourages Financial Discipline</h5>
-                                <p class="feature-description">Group accountability promotes responsible financial behavior and timely repayment practices.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Consumer Durable Loans Section -->
-    <section class="content-section">
-        <div class="container">
-            <div class="section-content">
-                <div class="service-content">
-                    <h3 class="service-title">
-                        <span class="service-icon">🛍️</span>
-                        Consumer Durable Loans
-                    </h3>
-                    
-                    <p class="service-description">
-                        Loans for purchasing household and electronic products. Make your dream purchases affordable with flexible repayment options designed to fit your budget.
-                    </p>
-                    
-                    <div class="loan-purpose-section">
-                        <h4 class="loan-purpose-title">Products Covered:</h4>
-                        <div class="purpose-grid">
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Televisions</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Refrigerators</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Washing Machines</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Air Conditioners</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Mobile Phones</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Home Appliances</span>
-                            </div>
-                            <div class="purpose-card">
-                                <span class="purpose-checkmark">✔</span>
-                                <span class="purpose-text">Two Wheelers</span>
                             </div>
                         </div>
                     </div>

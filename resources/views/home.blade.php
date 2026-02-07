@@ -246,6 +246,7 @@
             transition: all 0.3s ease;
             overflow: hidden;
             border-top: 4px solid var(--accent-teal);
+            cursor: pointer;
         }
         
         .loan-card:hover {
@@ -340,6 +341,105 @@
             font-weight: 500;
             color: var(--text-dark);
             line-height: 1.5;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-white);
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-white);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s;
+            overflow: hidden;
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .faq-question {
+            padding: 1.5rem 2rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        
+        .faq-question::after {
+            content: '▼';
+            font-size: 0.875rem;
+            color: var(--accent-teal);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            padding: 0 2rem 1.5rem 2rem;
+            font-size: 1.125rem;
+            color: var(--text-gray);
+            line-height: 1.7;
+            display: block;
+        }
+        
+        /* Testimonials Section */
+        .testimonials-section {
+            background: var(--bg-light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e5e7eb;
+            position: relative;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .testimonial-quote {
+            font-size: 3rem;
+            color: var(--accent-teal);
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-size: 1.125rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-style: italic;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 1;
         }
         
         /* Footer */
@@ -443,6 +543,37 @@
             .feature-checkmark {
                 font-size: 1.25rem;
             }
+            
+            .faq-question {
+                padding: 1.25rem 1.5rem;
+                font-size: 1.125rem;
+            }
+            
+            .faq-answer {
+                padding: 0 1.5rem 1.25rem 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .testimonial-quote {
+                font-size: 2.5rem;
+                top: 0.75rem;
+                left: 1.25rem;
+            }
+            
+            .testimonial-text {
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
         }
     </style>
 </head>
@@ -455,7 +586,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/our-services">Our Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -470,9 +601,9 @@
                     and group members through structured microfinance lending programs.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#apply" class="btn btn-primary">Apply for Loan</a>
-                    <a href="#member" class="btn btn-secondary">Become a Member</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    <a href="/apply-for-loan" class="btn btn-primary">Apply for Loan</a>
+                    <a href="/become-a-member" class="btn btn-secondary">Become a Member</a>
+                    <a href="/contact-us" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -504,7 +635,7 @@
         <div class="container">
             <h2 class="section-title">Our Loan Services</h2>
             <div class="loan-services-grid">
-                <div class="loan-card">
+                <a href="/small-trader-loans" class="loan-card" style="text-decoration: none; color: inherit; display: block;">
                     <div class="loan-card-content">
                         <div class="loan-icon">🏪</div>
                         <div class="loan-info">
@@ -512,8 +643,8 @@
                             <h3 class="loan-name">Small Trader Loans</h3>
                         </div>
                     </div>
-                </div>
-                <div class="loan-card">
+                </a>
+                <a href="/daily-collection-loans" class="loan-card" style="text-decoration: none; color: inherit; display: block;">
                     <div class="loan-card-content">
                         <div class="loan-icon">💰</div>
                         <div class="loan-info">
@@ -521,8 +652,8 @@
                             <h3 class="loan-name">Daily Collection Loans</h3>
                         </div>
                     </div>
-                </div>
-                <div class="loan-card">
+                </a>
+                <a href="/group-personal-loans" class="loan-card" style="text-decoration: none; color: inherit; display: block;">
                     <div class="loan-card-content">
                         <div class="loan-icon">👥</div>
                         <div class="loan-info">
@@ -530,8 +661,8 @@
                             <h3 class="loan-name">Group Personal Loans</h3>
                         </div>
                     </div>
-                </div>
-                <div class="loan-card">
+                </a>
+                <a href="/consumer-durable-loans" class="loan-card" style="text-decoration: none; color: inherit; display: block;">
                     <div class="loan-card-content">
                         <div class="loan-icon">🛍️</div>
                         <div class="loan-info">
@@ -539,7 +670,7 @@
                             <h3 class="loan-name">Consumer Durable Loans</h3>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -577,6 +708,52 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide large business loans?</div>
+                    <div class="faq-answer">No. We provide loans only for small traders, daily earners, group members, and consumer purchases.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Who can apply for daily collection loans?</div>
+                    <div class="faq-answer">Daily income earners and small vendors are eligible.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is group lending?</div>
+                    <div class="faq-answer">A lending model where members support each other for loan repayment.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does loan approval take?</div>
+                    <div class="faq-answer">Loan approval normally takes 24 to 72 working hours after verification.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">CUSTOMER TESTIMONIALS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"Our daily loan support helped maintain our shop cash flow."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"Group loan helped me manage family expenses easily."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"Consumer loan helped me purchase essential home appliances."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -588,9 +765,14 @@
                 <div class="footer-links">
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="/contact-us">Contact</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-and-conditions">Terms of Service</a>
+                </div>
+                <div style="margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem; opacity: 0.9;">Working Hours:</h4>
+                    <p style="opacity: 0.8; margin-bottom: 0.5rem; font-size: 1rem;">Monday to Saturday</p>
+                    <p style="opacity: 0.8; font-size: 1rem;">10:00 AM to 6:00 PM</p>
                 </div>
                 <p style="opacity: 0.6; margin-top: 2rem; font-size: 0.875rem;">
                     © {{ date('Y') }} People in Microfinance. All rights reserved.

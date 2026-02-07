@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About People in Microfinance - Learn about our mission, vision, and core values">
+    <meta name="description" content="Consumer Durable Loans - People in Microfinance - Loans for purchasing household and electronic products">
     
-    <title>About Us - People in Microfinance</title>
+    <title>Consumer Durable Loans - People in Microfinance</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -121,115 +121,82 @@
             margin: 0 auto;
         }
         
-        .section-title {
-            font-size: 2.5rem;
+        /* Service Content */
+        .service-content {
+            margin-top: 3rem;
+        }
+        
+        .service-title {
+            font-size: 2.25rem;
             font-weight: 700;
             color: var(--primary-blue);
-            margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-teal) 0%, var(--accent-teal-light) 100%);
-            border-radius: 2px;
-        }
-        
-        .section-text {
-            font-size: 1.125rem;
-            color: var(--text-gray);
-            line-height: 1.8;
             margin-bottom: 1.5rem;
-        }
-        
-        .section-text strong {
-            color: var(--primary-blue);
-            font-weight: 600;
-        }
-        
-        /* Mission & Vision Cards */
-        .mission-vision-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .mv-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            box-shadow: var(--shadow-md);
-            transition: all 0.3s ease;
-            border-top: 4px solid var(--accent-teal);
-        }
-        
-        .mv-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .mv-card h3 {
-            font-size: 1.75rem;
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 1rem;
         }
         
-        .mv-card .icon {
-            font-size: 2rem;
+        .service-icon {
+            font-size: 2.5rem;
         }
         
-        .mv-card p {
-            font-size: 1.125rem;
+        .service-description {
+            font-size: 1.25rem;
             color: var(--text-gray);
-            line-height: 1.8;
+            line-height: 1.9;
+            margin-bottom: 3rem;
+            max-width: 800px;
         }
         
-        /* Core Values */
-        .values-grid {
+        .loan-purpose-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--bg-light);
+        }
+        
+        .loan-purpose-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+        }
+        
+        .purpose-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
         
-        .value-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
+        .purpose-card {
+            background: var(--bg-white);
+            padding: 1.75rem;
+            border-radius: 12px;
             box-shadow: var(--shadow-md);
-            transition: all 0.3s ease;
-            text-align: center;
-            border-left: 4px solid var(--accent-teal);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
         
-        .value-card:hover {
+        .purpose-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
-            border-left-color: var(--accent-teal-light);
         }
         
-        .value-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .purpose-checkmark {
+            color: var(--accent-teal);
+            font-size: 2rem;
+            font-weight: bold;
+            flex-shrink: 0;
         }
         
-        .value-card h4 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
+        .purpose-text {
+            font-size: 1.125rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-weight: 500;
         }
         
         /* Footer */
@@ -270,17 +237,44 @@
                 font-size: 2rem;
             }
             
-            .section-title {
-                font-size: 2rem;
-            }
-            
             .nav-links {
                 display: none;
             }
             
-            .mission-vision-grid,
-            .values-grid {
+            .service-title {
+                font-size: 1.75rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+            
+            .service-icon {
+                font-size: 2rem;
+            }
+            
+            .service-description {
+                font-size: 1.125rem;
+            }
+            
+            .loan-purpose-title {
+                font-size: 1.5rem;
+            }
+            
+            .purpose-grid {
                 grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .purpose-card {
+                padding: 1.5rem;
+            }
+            
+            .purpose-checkmark {
+                font-size: 1.75rem;
+            }
+            
+            .purpose-text {
+                font-size: 1rem;
             }
         }
     </style>
@@ -302,82 +296,57 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>About Us</h1>
-            <p>Learn more about our mission, vision, and commitment to financial inclusion</p>
+            <h1>Consumer Durable Loans</h1>
+            <p>Loans for purchasing household and electronic products</p>
         </div>
     </section>
 
-    <!-- Company Overview -->
+    <!-- Services Content -->
     <section class="content-section">
         <div class="container">
             <div class="section-content">
-                <h2 class="section-title">Company Overview</h2>
-                <p class="section-text">
-                    <strong>People in Microfinance</strong> is a socially responsible microfinance organization committed to providing financial assistance to small traders, daily earners, and member groups. We focus on providing accessible lending services while promoting financial discipline and responsible borrowing.
-                </p>
-                <p class="section-text">
-                    Our organization understands the unique challenges faced by small business owners and individuals in underserved communities. Through our comprehensive microfinance solutions, we aim to bridge the financial gap and empower our members to achieve their economic goals.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Vision -->
-    <section class="content-section">
-        <div class="container">
-            <div class="mission-vision-grid">
-                <div class="mv-card">
-                    <h3>
-                        <span class="icon">🎯</span>
-                        Our Mission
+                <div class="service-content">
+                    <h3 class="service-title">
+                        <span class="service-icon">🛍️</span>
+                        Consumer Durable Loans
                     </h3>
-                    <p>
-                        To support small business owners and families by providing affordable microfinance services that promote financial stability and community development.
+                    
+                    <p class="service-description">
+                        Loans for purchasing household and electronic products.
                     </p>
-                </div>
-                <div class="mv-card">
-                    <h3>
-                        <span class="icon">👁️</span>
-                        Our Vision
-                    </h3>
-                    <p>
-                        To become a reliable microfinance institution empowering small traders and low-income communities through transparent financial support.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values -->
-    <section class="content-section">
-        <div class="container">
-            <div class="section-content">
-                <h2 class="section-title">Core Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">⚖️</div>
-                        <h4>Integrity</h4>
-                        <p>We conduct our business with honesty, ethics, and moral principles in all our interactions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🔍</div>
-                        <h4>Transparency</h4>
-                        <p>We maintain open and clear communication about our processes, terms, and conditions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h4>Customer Commitment</h4>
-                        <p>We are dedicated to serving our members with excellence and understanding their needs.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🌍</div>
-                        <h4>Financial Inclusion</h4>
-                        <p>We believe in providing equal access to financial services for all members of society.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">❤️</div>
-                        <h4>Social Responsibility</h4>
-                        <p>We are committed to making a positive impact on the communities we serve.</p>
+                    
+                    <div class="loan-purpose-section">
+                        <h4 class="loan-purpose-title">Products Covered:</h4>
+                        <div class="purpose-grid">
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Televisions</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Refrigerators</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Washing Machines</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Air Conditioners</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Mobile Phones</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Home Appliances</span>
+                            </div>
+                            <div class="purpose-card">
+                                <span class="purpose-checkmark">✔</span>
+                                <span class="purpose-text">Two Wheelers</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -395,7 +364,7 @@
                 <div class="footer-links">
                     <a href="/">Home</a>
                     <a href="/about-us">About Us</a>
-                    <a href="/#services">Services</a>
+                    <a href="/our-services">Our Services</a>
                     <a href="/contact-us">Contact</a>
                     <a href="/privacy-policy">Privacy Policy</a>
                     <a href="/terms-and-conditions">Terms of Service</a>

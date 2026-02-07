@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About People in Microfinance - Learn about our mission, vision, and core values">
+    <meta name="description" content="Terms and Conditions - People in Microfinance - Institutional rules and regulatory compliance">
     
-    <title>About Us - People in Microfinance</title>
+    <title>Terms and Conditions - People in Microfinance</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -121,115 +121,30 @@
             margin: 0 auto;
         }
         
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-blue);
+        .terms-card {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
             margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 1rem;
         }
         
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-teal) 0%, var(--accent-teal-light) 100%);
-            border-radius: 2px;
-        }
-        
-        .section-text {
-            font-size: 1.125rem;
-            color: var(--text-gray);
-            line-height: 1.8;
+        .terms-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--primary-blue);
             margin-bottom: 1.5rem;
         }
         
-        .section-text strong {
-            color: var(--primary-blue);
-            font-weight: 600;
-        }
-        
-        /* Mission & Vision Cards */
-        .mission-vision-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .mv-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            box-shadow: var(--shadow-md);
-            transition: all 0.3s ease;
-            border-top: 4px solid var(--accent-teal);
-        }
-        
-        .mv-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .mv-card h3 {
-            font-size: 1.75rem;
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        
-        .mv-card .icon {
-            font-size: 2rem;
-        }
-        
-        .mv-card p {
+        .terms-text {
             font-size: 1.125rem;
             color: var(--text-gray);
             line-height: 1.8;
-        }
-        
-        /* Core Values */
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .value-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
-            transition: all 0.3s ease;
-            text-align: center;
-            border-left: 4px solid var(--accent-teal);
-        }
-        
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-            border-left-color: var(--accent-teal-light);
-        }
-        
-        .value-icon {
-            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
         
-        .value-card h4 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
+        .terms-text:last-child {
+            margin-bottom: 0;
         }
         
         /* Footer */
@@ -270,17 +185,20 @@
                 font-size: 2rem;
             }
             
-            .section-title {
-                font-size: 2rem;
-            }
-            
             .nav-links {
                 display: none;
             }
             
-            .mission-vision-grid,
-            .values-grid {
-                grid-template-columns: 1fr;
+            .terms-card {
+                padding: 1.5rem;
+            }
+            
+            .terms-title {
+                font-size: 1.5rem;
+            }
+            
+            .terms-text {
+                font-size: 1rem;
             }
         }
     </style>
@@ -302,83 +220,27 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>About Us</h1>
-            <p>Learn more about our mission, vision, and commitment to financial inclusion</p>
+            <h1>Terms and Conditions</h1>
+            <p>Institutional rules and regulatory compliance</p>
         </div>
     </section>
 
-    <!-- Company Overview -->
+    <!-- Main Content -->
     <section class="content-section">
         <div class="container">
             <div class="section-content">
-                <h2 class="section-title">Company Overview</h2>
-                <p class="section-text">
-                    <strong>People in Microfinance</strong> is a socially responsible microfinance organization committed to providing financial assistance to small traders, daily earners, and member groups. We focus on providing accessible lending services while promoting financial discipline and responsible borrowing.
-                </p>
-                <p class="section-text">
-                    Our organization understands the unique challenges faced by small business owners and individuals in underserved communities. Through our comprehensive microfinance solutions, we aim to bridge the financial gap and empower our members to achieve their economic goals.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Vision -->
-    <section class="content-section">
-        <div class="container">
-            <div class="mission-vision-grid">
-                <div class="mv-card">
-                    <h3>
-                        <span class="icon">🎯</span>
-                        Our Mission
-                    </h3>
-                    <p>
-                        To support small business owners and families by providing affordable microfinance services that promote financial stability and community development.
+                <div class="terms-card">
+                    <h2 class="terms-title">Terms and Conditions</h2>
+                    <p class="terms-text">
+                        All loans are subject to institutional rules, membership policies, and applicable legal regulations. Members must comply with repayment schedules.
                     </p>
                 </div>
-                <div class="mv-card">
-                    <h3>
-                        <span class="icon">👁️</span>
-                        Our Vision
-                    </h3>
-                    <p>
-                        To become a reliable microfinance institution empowering small traders and low-income communities through transparent financial support.
+                
+                <div class="terms-card">
+                    <h2 class="terms-title">Regulatory Compliance</h2>
+                    <p class="terms-text">
+                        Our institution operates in compliance with applicable cooperative and microfinance regulatory guidelines.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values -->
-    <section class="content-section">
-        <div class="container">
-            <div class="section-content">
-                <h2 class="section-title">Core Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">⚖️</div>
-                        <h4>Integrity</h4>
-                        <p>We conduct our business with honesty, ethics, and moral principles in all our interactions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🔍</div>
-                        <h4>Transparency</h4>
-                        <p>We maintain open and clear communication about our processes, terms, and conditions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h4>Customer Commitment</h4>
-                        <p>We are dedicated to serving our members with excellence and understanding their needs.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🌍</div>
-                        <h4>Financial Inclusion</h4>
-                        <p>We believe in providing equal access to financial services for all members of society.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">❤️</div>
-                        <h4>Social Responsibility</h4>
-                        <p>We are committed to making a positive impact on the communities we serve.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -395,7 +257,7 @@
                 <div class="footer-links">
                     <a href="/">Home</a>
                     <a href="/about-us">About Us</a>
-                    <a href="/#services">Services</a>
+                    <a href="/our-services">Our Services</a>
                     <a href="/contact-us">Contact</a>
                     <a href="/privacy-policy">Privacy Policy</a>
                     <a href="/terms-and-conditions">Terms of Service</a>
