@@ -303,7 +303,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>About Us</h1>
             <p>Learn more about our mission, vision, and commitment to financial inclusion</p>
         </div>
@@ -312,7 +312,7 @@
     <!-- Company Overview -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">Company Overview</h2>
                 <p class="section-text">
                     <strong>People in Microfinance</strong> is a socially responsible microfinance organization committed to providing financial assistance to small traders, daily earners, and member groups. We focus on providing accessible lending services while promoting financial discipline and responsible borrowing.
@@ -327,7 +327,7 @@
     <!-- Mission & Vision -->
     <section class="content-section">
         <div class="container">
-            <div class="mission-vision-grid">
+            <div class="mission-vision-grid scroll-reveal-grid">
                 <div class="mv-card">
                     <h3>
                         <span class="icon">🎯</span>
@@ -353,9 +353,9 @@
     <!-- Core Values -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">Core Values</h2>
-                <div class="values-grid">
+                <div class="values-grid scroll-reveal-grid">
                     <div class="value-card">
                         <div class="value-icon">⚖️</div>
                         <h4>Integrity</h4>
@@ -389,7 +389,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -413,5 +413,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>

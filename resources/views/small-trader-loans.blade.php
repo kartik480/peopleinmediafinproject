@@ -373,7 +373,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>Small Trader Loans</h1>
             <p>Financial assistance for small business owners and street-level traders</p>
         </div>
@@ -382,7 +382,7 @@
     <!-- Services Content -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <div class="service-content">
                     <h3 class="service-title">
                         <span class="service-icon">🏪</span>
@@ -395,7 +395,7 @@
                     
                     <div class="loan-purpose-section">
                         <h4 class="loan-purpose-title">Loan Purpose Includes:</h4>
-                        <div class="purpose-grid">
+                        <div class="purpose-grid scroll-reveal-grid">
                             <div class="purpose-card">
                                 <span class="purpose-checkmark">✔</span>
                                 <span class="purpose-text">Shop inventory purchase</span>
@@ -417,7 +417,7 @@
                     
                     <div class="features-section">
                         <h4 class="features-title">Features:</h4>
-                        <div class="features-grid">
+                        <div class="features-grid scroll-reveal-grid">
                             <div class="feature-card">
                                 <span class="feature-icon">📄</span>
                                 <h5 class="feature-name">Easy Documentation</h5>
@@ -448,7 +448,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -472,5 +472,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>

@@ -297,7 +297,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>Consumer Durable Loans</h1>
             <p>Loans for purchasing household and electronic products</p>
         </div>
@@ -306,7 +306,7 @@
     <!-- Services Content -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <div class="service-content">
                     <h3 class="service-title">
                         <span class="service-icon">🛍️</span>
@@ -358,7 +358,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -382,5 +382,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>

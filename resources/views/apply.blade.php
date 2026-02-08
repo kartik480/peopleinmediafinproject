@@ -290,7 +290,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>Apply for Loan</h1>
             <p>Fill out the form below to submit your loan application</p>
         </div>
@@ -299,7 +299,7 @@
     <!-- Loan Application Form Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <form class="loan-form" action="#" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="full_name" class="form-label">Full Name<span class="required">*</span></label>
@@ -454,7 +454,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -478,5 +478,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>

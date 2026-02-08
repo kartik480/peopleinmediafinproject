@@ -254,7 +254,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>Contact Us</h1>
             <p>Get in touch with us for any inquiries or support</p>
         </div>
@@ -263,7 +263,7 @@
     <!-- Contact Form Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <form class="contact-form" action="#" method="POST">
                     <div class="form-group">
                         <label for="office_address" class="form-label">Office Address:</label>
@@ -312,7 +312,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -336,5 +336,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>

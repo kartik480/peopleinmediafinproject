@@ -397,7 +397,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container scroll-reveal">
             <h1>Become a Member</h1>
             <p>Join our microfinance institution to access comprehensive loan services</p>
         </div>
@@ -406,13 +406,13 @@
     <!-- Main Content -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <p class="intro-text">
                     All loan services are available only to registered members of our institution.
                 </p>
                 
                 <h2 class="section-title">Membership Benefits</h2>
-                <div class="benefits-grid">
+                <div class="benefits-grid scroll-reveal-grid">
                     <div class="benefit-card">
                         <span class="benefit-icon">💼</span>
                         <h3 class="benefit-name">Access to Multiple Loan Schemes</h3>
@@ -441,12 +441,12 @@
     <!-- Eligibility Criteria Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">ELIGIBILITY CRITERIA</h2>
                 <p style="text-align: center; font-size: 1.125rem; color: var(--text-gray); margin-bottom: 2rem;">
                     Applicants must meet the following requirements:
                 </p>
-                <div class="eligibility-grid">
+                <div class="eligibility-grid scroll-reveal-grid">
                     <div class="eligibility-card">
                         <span class="eligibility-checkmark">✔</span>
                         <span class="eligibility-text">Minimum age – 18 years</span>
@@ -475,9 +475,9 @@
     <!-- Documents Required Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">DOCUMENTS REQUIRED</h2>
-                <div class="eligibility-grid">
+                <div class="eligibility-grid scroll-reveal-grid">
                     <div class="eligibility-card">
                         <span class="eligibility-checkmark">✔</span>
                         <span class="eligibility-text">Aadhaar Card</span>
@@ -506,9 +506,9 @@
     <!-- Loan Application Process Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">LOAN APPLICATION PROCESS</h2>
-                <div class="process-steps">
+                <div class="process-steps scroll-reveal-grid">
                     <div class="process-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
@@ -545,7 +545,7 @@
     <!-- Group Lending Model Section -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content">
+            <div class="section-content scroll-reveal">
                 <h2 class="section-title">GROUP LENDING MODEL</h2>
                 
                 <div class="terms-card" style="margin-top: 2rem;">
@@ -564,7 +564,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content scroll-reveal-scale">
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">People in Microfinance</h3>
                 <p style="opacity: 0.8; margin-bottom: 2rem;">
                     Empowering communities through responsible microfinance solutions
@@ -588,5 +588,6 @@
             </div>
         </div>
     </footer>
+    @include('partials.scroll-reveal')
 </body>
 </html>
