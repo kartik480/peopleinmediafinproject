@@ -548,39 +548,120 @@
             font-weight: 700;
         }
         
-        /* Why Choose Us Section */
+        /* Why Choose Us Section - list box design (same as Core Values) */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            gap: 1.25rem;
             margin-top: 3rem;
         }
         
         .feature-item {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            background: white;
-            padding: 1.25rem 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
+            gap: 1.25rem;
+            background: #e0f2fe;
+            padding: 1.5rem 1.75rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
             transition: all 0.3s ease;
-            border-left: 4px solid var(--accent-teal);
+            position: relative;
+            text-align: left;
         }
-        
+        .feature-item:nth-child(1) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
+        }
+        .feature-item:nth-child(2) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #f59e0b,
+                -10px 0 0 0 #0d9488,
+                -15px 0 0 0 #6366f1;
+        }
+        .feature-item:nth-child(3) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #8b5cf6,
+                -10px 0 0 0 #06b6d4,
+                -15px 0 0 0 #ec4899;
+        }
+        .feature-item:nth-child(4) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #10b981,
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 #f97316;
+        }
+        .feature-item:nth-child(5) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #14b8a6,
+                -10px 0 0 0 #a855f7,
+                -15px 0 0 0 #eab308;
+        }
+        .feature-item:nth-child(6) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #06b6d4,
+                -10px 0 0 0 #ec4899,
+                -15px 0 0 0 #0d9488;
+        }
         .feature-item:hover {
-            transform: translateX(5px);
-            box-shadow: var(--shadow-lg);
-            border-left-color: var(--accent-teal-light);
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
+        }
+        .feature-item:nth-child(2):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #f59e0b,
+                -10px 0 0 0 #0d9488,
+                -15px 0 0 0 #6366f1;
+        }
+        .feature-item:nth-child(3):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #8b5cf6,
+                -10px 0 0 0 #06b6d4,
+                -15px 0 0 0 #ec4899;
+        }
+        .feature-item:nth-child(4):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #10b981,
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 #f97316;
+        }
+        .feature-item:nth-child(5):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #14b8a6,
+                -10px 0 0 0 #a855f7,
+                -15px 0 0 0 #eab308;
+        }
+        .feature-item:nth-child(6):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #06b6d4,
+                -10px 0 0 0 #ec4899,
+                -15px 0 0 0 #0d9488;
         }
         
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(13, 148, 136, 0.12);
+            border-radius: 0.5rem;
+            flex-shrink: 0;
+        }
         .feature-checkmark {
             color: var(--accent-teal);
             font-size: 1.5rem;
             font-weight: bold;
-            flex-shrink: 0;
         }
-        
+        .feature-content {
+            min-width: 0;
+        }
         .feature-text {
             font-size: 1.125rem;
             font-weight: 500;
@@ -799,15 +880,17 @@
             }
             
             .feature-item {
-                padding: 1rem 1.25rem;
+                padding: 1.25rem 1.5rem;
             }
-            
-            .feature-text {
-                font-size: 1rem;
+            .feature-icon {
+                width: 48px;
+                height: 48px;
             }
-            
             .feature-checkmark {
                 font-size: 1.25rem;
+            }
+            .feature-text {
+                font-size: 1rem;
             }
             
             .faq-question {
@@ -927,7 +1010,7 @@
                 <a href="/small-trader-loans" class="loan-card" style="text-decoration: none; color: inherit;">
                     <div class="loan-card-content">
                         <div class="loan-card-top">
-                            <div class="loan-icon">🏪</div>
+                            <div class="loan-icon">🏬</div>
                         </div>
                         <div class="loan-card-bottom">
                             <div class="loan-info">
@@ -986,28 +1069,28 @@
             <h2 class="section-title scroll-reveal">Why Choose Us</h2>
             <div class="features-grid scroll-reveal-grid">
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Fast and simple loan approval</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Fast and simple loan approval</span></div>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Minimal documentation</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Minimal documentation</span></div>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Flexible repayment options</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Flexible repayment options</span></div>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Transparent lending policies</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Transparent lending policies</span></div>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Member-focused financial services</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Member-focused financial services</span></div>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-checkmark">✔</span>
-                    <span class="feature-text">Ethical microfinance practices</span>
+                    <div class="feature-icon"><span class="feature-checkmark">✔</span></div>
+                    <div class="feature-content"><span class="feature-text">Ethical microfinance practices</span></div>
                 </div>
             </div>
         </div>

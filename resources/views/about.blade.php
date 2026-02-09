@@ -88,23 +88,48 @@
             color: var(--primary-blue);
         }
         
-        /* Page Header */
+        /* Page Header - Hero */
         .page-header {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+            background: linear-gradient(145deg, var(--primary-blue) 0%, #1e3a5f 50%, var(--primary-blue-dark) 100%);
             color: white;
-            padding: 4rem 0;
+            padding: 5rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        .page-header .eyebrow {
+            display: inline-block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+        }
         .page-header h1 {
-            font-size: 3rem;
+            font-size: 3.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
         }
-        
         .page-header p {
             font-size: 1.25rem;
             opacity: 0.9;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
         
         /* Content Sections */
@@ -114,6 +139,26 @@
         
         .content-section:nth-child(even) {
             background: var(--bg-light);
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .overview-grid .section-content {
+            max-width: none;
+        }
+        .overview-img-wrap {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .overview-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         
         .section-content {
@@ -153,6 +198,11 @@
         .section-text strong {
             color: var(--primary-blue);
             font-weight: 600;
+        }
+        
+        /* Mission & Vision Section - dark background (override even-section rule) */
+        .content-section.mission-vision-section {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
         }
         
         /* Mission & Vision Cards */
@@ -196,40 +246,161 @@
             line-height: 1.8;
         }
         
-        /* Core Values */
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+        /* Core Values - horizontal scrollable carousel (landscape cards) */
+        .values-carousel-wrap {
             margin-top: 2rem;
+            overflow: hidden;
+            padding-bottom: 0.5rem;
+        }
+        
+        .values-grid {
+            display: flex;
+            gap: 1.25rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+            scroll-padding-left: 1.5rem;
+            scroll-padding-right: 1.5rem;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .value-card:first-child {
+            margin-left: 1.25rem;
+        }
+        
+        .values-grid::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .values-grid::-webkit-scrollbar-track {
+            background: #e5e7eb;
+            border-radius: 4px;
+        }
+        
+        .values-grid::-webkit-scrollbar-thumb {
+            background: var(--accent-teal);
+            border-radius: 4px;
         }
         
         .value-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
+            flex: 0 0 auto;
+            min-width: 340px;
+            max-width: 380px;
+            background: #e0f2fe;
+            padding: 1.5rem 1.75rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
             transition: all 0.3s ease;
-            text-align: center;
-            border-left: 4px solid var(--accent-teal);
+            scroll-snap-align: start;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            text-align: left;
+            position: relative;
+        }
+        
+        .value-card:nth-child(1) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
+        }
+        
+        .value-card:nth-child(2) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #f59e0b,
+                -10px 0 0 0 #0d9488,
+                -15px 0 0 0 #6366f1;
+        }
+        
+        .value-card:nth-child(3) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #8b5cf6,
+                -10px 0 0 0 #06b6d4,
+                -15px 0 0 0 #ec4899;
+        }
+        
+        .value-card:nth-child(4) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #10b981,
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 #f97316;
+        }
+        
+        .value-card:nth-child(5) {
+            box-shadow: var(--shadow-md),
+                -5px 0 0 0 #14b8a6,
+                -10px 0 0 0 #a855f7,
+                -15px 0 0 0 #eab308;
         }
         
         .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-            border-left-color: var(--accent-teal-light);
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #0d9488,
+                -10px 0 0 0 #3b82f6,
+                -15px 0 0 0 #dc2626;
+        }
+        
+        .value-card:nth-child(2):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #f59e0b,
+                -10px 0 0 0 #0d9488,
+                -15px 0 0 0 #6366f1;
+        }
+        
+        .value-card:nth-child(3):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #8b5cf6,
+                -10px 0 0 0 #06b6d4,
+                -15px 0 0 0 #ec4899;
+        }
+        
+        .value-card:nth-child(4):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #10b981,
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 #f97316;
+        }
+        
+        .value-card:nth-child(5):hover {
+            box-shadow: var(--shadow-lg),
+                -5px 0 0 0 #14b8a6,
+                -10px 0 0 0 #a855f7,
+                -15px 0 0 0 #eab308;
         }
         
         .value-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.25rem;
+            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 0.5rem;
+        }
+        
+        .value-card-content {
+            min-width: 0;
         }
         
         .value-card h4 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: var(--primary-blue);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .value-card p {
+            font-size: 0.9375rem;
+            color: var(--text-gray);
+            line-height: 1.55;
+            margin: 0;
         }
         
         /* Footer */
@@ -266,8 +437,14 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            .page-header {
+                padding: 3.5rem 0;
+            }
             .page-header h1 {
-                font-size: 2rem;
+                font-size: 2.25rem;
+            }
+            .page-header .eyebrow {
+                font-size: 0.75rem;
             }
             
             .section-title {
@@ -278,9 +455,21 @@
                 display: none;
             }
             
-            .mission-vision-grid,
-            .values-grid {
+            .mission-vision-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .overview-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .overview-grid .overview-img-wrap {
+                order: -1;
+            }
+            
+            .value-card {
+                min-width: 300px;
+                max-width: 100%;
             }
         }
     </style>
@@ -304,6 +493,7 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container scroll-reveal">
+            <p class="eyebrow">Who we are</p>
             <h1>About Us</h1>
             <p>Learn more about our mission, vision, and commitment to financial inclusion</p>
         </div>
@@ -312,20 +502,25 @@
     <!-- Company Overview -->
     <section class="content-section">
         <div class="container">
-            <div class="section-content scroll-reveal">
-                <h2 class="section-title">Company Overview</h2>
-                <p class="section-text">
-                    <strong>People in Microfinance</strong> is a socially responsible microfinance organization committed to providing financial assistance to small traders, daily earners, and member groups. We focus on providing accessible lending services while promoting financial discipline and responsible borrowing.
-                </p>
-                <p class="section-text">
-                    Our organization understands the unique challenges faced by small business owners and individuals in underserved communities. Through our comprehensive microfinance solutions, we aim to bridge the financial gap and empower our members to achieve their economic goals.
-                </p>
+            <div class="overview-grid scroll-reveal">
+                <div class="section-content">
+                    <h2 class="section-title">Company Overview</h2>
+                    <p class="section-text">
+                        <strong>People in Microfinance</strong> is a socially responsible microfinance organization committed to providing financial assistance to small traders, daily earners, and member groups. We focus on providing accessible lending services while promoting financial discipline and responsible borrowing.
+                    </p>
+                    <p class="section-text">
+                        Our organization understands the unique challenges faced by small business owners and individuals in underserved communities. Through our comprehensive microfinance solutions, we aim to bridge the financial gap and empower our members to achieve their economic goals.
+                    </p>
+                </div>
+                <div class="overview-img-wrap">
+                    <img src="{{ asset('images/aboutcompany.png') }}" alt="People in Microfinance - Company" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Mission & Vision -->
-    <section class="content-section">
+    <section class="content-section mission-vision-section">
         <div class="container">
             <div class="mission-vision-grid scroll-reveal-grid">
                 <div class="mv-card">
@@ -355,31 +550,43 @@
         <div class="container">
             <div class="section-content scroll-reveal">
                 <h2 class="section-title">Core Values</h2>
-                <div class="values-grid scroll-reveal-grid">
-                    <div class="value-card">
-                        <div class="value-icon">⚖️</div>
-                        <h4>Integrity</h4>
-                        <p>We conduct our business with honesty, ethics, and moral principles in all our interactions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🔍</div>
-                        <h4>Transparency</h4>
-                        <p>We maintain open and clear communication about our processes, terms, and conditions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h4>Customer Commitment</h4>
-                        <p>We are dedicated to serving our members with excellence and understanding their needs.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🌍</div>
-                        <h4>Financial Inclusion</h4>
-                        <p>We believe in providing equal access to financial services for all members of society.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">❤️</div>
-                        <h4>Social Responsibility</h4>
-                        <p>We are committed to making a positive impact on the communities we serve.</p>
+                <div class="values-carousel-wrap">
+                    <div class="values-grid scroll-reveal-grid">
+                        <div class="value-card">
+                            <div class="value-icon">⚖️</div>
+                            <div class="value-card-content">
+                                <h4>Integrity</h4>
+                                <p>We conduct our business with honesty, ethics, and moral principles in all our interactions.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🔍</div>
+                            <div class="value-card-content">
+                                <h4>Transparency</h4>
+                                <p>We maintain open and clear communication about our processes, terms, and conditions.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🤝</div>
+                            <div class="value-card-content">
+                                <h4>Customer Commitment</h4>
+                                <p>We are dedicated to serving our members with excellence and understanding their needs.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🌍</div>
+                            <div class="value-card-content">
+                                <h4>Financial Inclusion</h4>
+                                <p>We believe in providing equal access to financial services for all members of society.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">❤️</div>
+                            <div class="value-card-content">
+                                <h4>Social Responsibility</h4>
+                                <p>We are committed to making a positive impact on the communities we serve.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

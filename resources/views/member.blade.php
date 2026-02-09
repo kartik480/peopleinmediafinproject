@@ -88,23 +88,48 @@
             color: var(--primary-blue);
         }
         
-        /* Page Header */
+        /* Page Header - Hero */
         .page-header {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+            background: linear-gradient(145deg, var(--primary-blue) 0%, #1e3a5f 50%, var(--primary-blue-dark) 100%);
             color: white;
-            padding: 4rem 0;
+            padding: 5rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        .page-header .eyebrow {
+            display: inline-block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+        }
         .page-header h1 {
-            font-size: 3rem;
+            font-size: 3.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
         }
-        
         .page-header p {
             font-size: 1.25rem;
             opacity: 0.9;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
         
         /* Content Sections */
@@ -321,8 +346,14 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            .page-header {
+                padding: 3.5rem 0;
+            }
             .page-header h1 {
-                font-size: 2rem;
+                font-size: 2.25rem;
+            }
+            .page-header .eyebrow {
+                font-size: 0.75rem;
             }
             
             .section-title {
@@ -398,6 +429,7 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container scroll-reveal">
+            <p class="eyebrow">Join us</p>
             <h1>Become a Member</h1>
             <p>Join our microfinance institution to access comprehensive loan services</p>
         </div>
