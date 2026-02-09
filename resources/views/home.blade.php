@@ -389,11 +389,27 @@
         }
         
         /* About Section */
-        
-        .about-content {
-            max-width: 900px;
+        .about-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            max-width: 1000px;
             margin: 0 auto;
-            text-align: center;
+        }
+        .about-image {
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .about-content {
+            max-width: none;
+            text-align: left;
         }
         
         .about-content h2 {
@@ -565,8 +581,8 @@
             border-radius: 1rem;
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
             transition: all 0.3s ease;
             position: relative;
             text-align: left;
@@ -574,74 +590,74 @@
         .feature-item:nth-child(1) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(2) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #f59e0b,
                 -10px 0 0 0 #0d9488,
-                -15px 0 0 0 #6366f1;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(3) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #8b5cf6,
                 -10px 0 0 0 #06b6d4,
-                -15px 0 0 0 #ec4899;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(4) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #10b981,
                 -10px 0 0 0 #2563eb,
-                -15px 0 0 0 #f97316;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(5) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #14b8a6,
-                -10px 0 0 0 #a855f7,
-                -15px 0 0 0 #eab308;
+                -10px 0 0 0 #6366f1,
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(6) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #06b6d4,
-                -10px 0 0 0 #ec4899,
-                -15px 0 0 0 #0d9488;
+                -10px 0 0 0 #0d9488,
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(2):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #f59e0b,
                 -10px 0 0 0 #0d9488,
-                -15px 0 0 0 #6366f1;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(3):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #8b5cf6,
                 -10px 0 0 0 #06b6d4,
-                -15px 0 0 0 #ec4899;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(4):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #10b981,
                 -10px 0 0 0 #2563eb,
-                -15px 0 0 0 #f97316;
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(5):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #14b8a6,
-                -10px 0 0 0 #a855f7,
-                -15px 0 0 0 #eab308;
+                -10px 0 0 0 #6366f1,
+                -15px 0 0 0 var(--primary-blue);
         }
         .feature-item:nth-child(6):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #06b6d4,
                 -10px 0 0 0 #ec4899,
-                -15px 0 0 0 #0d9488;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .feature-icon {
@@ -829,6 +845,16 @@
                 font-size: 1rem;
             }
             
+            .about-inner {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .about-image {
+                order: -1;
+            }
+            .about-content {
+                text-align: center;
+            }
             .section-title {
                 font-size: 2rem;
             }
@@ -984,20 +1010,25 @@
     <!-- About Section -->
     <section class="section about" id="about">
         <div class="container">
-            <div class="about-content scroll-reveal">
-                <h2>Welcome to People in Microfinance</h2>
-                <p>
-                    <strong>People in Microfinance</strong> is a trusted microfinance institution dedicated to 
-                    supporting small business owners, daily earners, and community groups. Our services are 
-                    designed to provide easy access to personal and consumer financing through responsible 
-                    and transparent lending practices.
-                </p>
-                <p>
-                    We aim to strengthen small entrepreneurs and families by providing reliable financial 
-                    solutions. With years of experience in microfinance, we understand the unique challenges 
-                    faced by small businesses and individuals, and we're committed to helping you achieve 
-                    your financial goals.
-                </p>
+            <div class="about-inner scroll-reveal">
+                <div class="about-image">
+                    <img src="{{ asset('images/welcome.png') }}" alt="Welcome to People in Microfinance" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2>Welcome to People in Microfinance</h2>
+                    <p>
+                        <strong>People in Microfinance</strong> is a trusted microfinance institution dedicated to 
+                        supporting small business owners, daily earners, and community groups. Our services are 
+                        designed to provide easy access to personal and consumer financing through responsible 
+                        and transparent lending practices.
+                    </p>
+                    <p>
+                        We aim to strengthen small entrepreneurs and families by providing reliable financial 
+                        solutions. With years of experience in microfinance, we understand the unique challenges 
+                        faced by small businesses and individuals, and we're committed to helping you achieve 
+                        your financial goals.
+                    </p>
+                </div>
             </div>
         </div>
     </section>

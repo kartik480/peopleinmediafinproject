@@ -292,8 +292,8 @@
             border-radius: 1rem;
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
             transition: all 0.3s ease;
             scroll-snap-align: start;
             display: flex;
@@ -306,71 +306,71 @@
         .value-card:nth-child(1) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(2) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #f59e0b,
                 -10px 0 0 0 #0d9488,
-                -15px 0 0 0 #6366f1;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(3) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #8b5cf6,
                 -10px 0 0 0 #06b6d4,
-                -15px 0 0 0 #ec4899;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(4) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #10b981,
                 -10px 0 0 0 #2563eb,
-                -15px 0 0 0 #f97316;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(5) {
             box-shadow: var(--shadow-md),
                 -5px 0 0 0 #14b8a6,
-                -10px 0 0 0 #a855f7,
-                -15px 0 0 0 #eab308;
+                -10px 0 0 0 #6366f1,
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #0d9488,
-                -10px 0 0 0 #3b82f6,
-                -15px 0 0 0 #dc2626;
+                -10px 0 0 0 #2563eb,
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(2):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #f59e0b,
                 -10px 0 0 0 #0d9488,
-                -15px 0 0 0 #6366f1;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(3):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #8b5cf6,
                 -10px 0 0 0 #06b6d4,
-                -15px 0 0 0 #ec4899;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(4):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #10b981,
                 -10px 0 0 0 #2563eb,
-                -15px 0 0 0 #f97316;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-card:nth-child(5):hover {
             box-shadow: var(--shadow-lg),
                 -5px 0 0 0 #14b8a6,
                 -10px 0 0 0 #a855f7,
-                -15px 0 0 0 #eab308;
+                -15px 0 0 0 var(--primary-blue);
         }
         
         .value-icon {
